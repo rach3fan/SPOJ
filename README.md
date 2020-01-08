@@ -3,7 +3,7 @@ Learning through practice!
 
 Here are some of my SPOJ solutions writen in C#. More cooming soon. I'm planing to add tests too.
 
-Becouse of some isues with large I/O data on some SPOJ problems, consider using StreamWriter and StreamReader in most cases.
+Because of some isues with large I/O data on some SPOJ problems, consider using StreamWriter and StreamReader in most cases.
 
 
 |___#___|___Added___|___SPOJ ID___|___SPOJ problem name___| ___Solution___|___Tags___|___Type of problem___|
