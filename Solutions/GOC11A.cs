@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 
 // Solution to "GOC11A - Appending String"  SPOJ.com classical problem 
@@ -11,11 +10,11 @@ public static class GOC11A
     public static void Solve()
     {
         var remainingTestCases = int.Parse(Console.ReadLine());
-        var results = new List<Tuple<string, List<int>>>();
+        var results = new List<(string afterAppend, List<int> queries)>();
 
         while (remainingTestCases-- > 0)
         {
-            string forAppend = Console.ReadLine();
+            string lineForAppend = Console.ReadLine();
             int remainingQueries = int.Parse(Console.ReadLine());
             var queries = new List<int>();
 
@@ -24,54 +23,48 @@ public static class GOC11A
                 queries.Add(int.Parse(Console.ReadLine()));
             }
 
-            var charactersForAppend = forAppend.ToCharArray();
-            string afterAppend = Append(charactersForAppend);
+            var charactersForAppend = lineForAppend.ToCharArray();
+            string lineAfterAppend = Append(charactersForAppend);
 
-            results.Add(new Tuple<string, List<int>>(afterAppend, queries));
+            results.Add((lineAfterAppend, queries));
         }
         Print(results);
     }
 
     public static string Append(char[] charactersForAppend)
     {
-        string underConstruction = null;
+        string lineUnderConstruction = null;
         for (int i = 0; i < charactersForAppend.Length - 1; i++)
         {
             bool isDigit = char.IsDigit(charactersForAppend[i]);
-            if (isDigit == false)
-            {
-                underConstruction += (charactersForAppend[i]);
-            }
-            else
+            if (isDigit)
             {
                 if (charactersForAppend[i].Equals(0))
                 {
-                    underConstruction = string.Empty;
+                    lineUnderConstruction = string.Empty;
                 }
                 else
                 {
-                    underConstruction = string.Concat(Enumerable.Repeat(
-                            underConstruction, int.Parse(charactersForAppend[i].ToString())));
+                    lineUnderConstruction = string.Concat(Enumerable.Repeat(
+                            lineUnderConstruction, int.Parse(charactersForAppend[i].ToString())));
                 }
             }
+            else
+            {
+                lineUnderConstruction += charactersForAppend[i];
+            }
         }
-        return underConstruction;
+        return lineUnderConstruction;
     }
 
-    public static void Print(List<Tuple<string, List<int>>> results)
+    public static void Print(List<(string afterAppend, List<int> queries)> results)
     {
         foreach (var result in results)
         {
-            for (int i = 0; i < result.Item2.Count; i++)
+            for (int i = 0; i < result.queries.Count; i++)
             {
-                if (result.Item2[i] <= result.Item1.Length)
-                {
-                    Console.WriteLine(result.Item1.ElementAt(result.Item2[i] - 1));
-                }
-                else
-                {
-                    Console.WriteLine("-1");
-                }
+                Console.WriteLine(result.queries[i] <= result.afterAppend.Length ?
+                   result.afterAppend.ElementAt(result.queries[i] - 1) : -1);
             }
         }
         Console.ReadKey();
