@@ -50,7 +50,7 @@ class Program
 
         while (remainingTestCases-- > 0)
         {
-            var line = reader.ReadLine().Split(splitCharacters).ToArray();
+            var line = reader.ReadLine().Split(splitCharacters);
             lines.Add(line);
         }
 

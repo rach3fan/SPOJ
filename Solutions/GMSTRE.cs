@@ -111,7 +111,7 @@ class Program
 
         while (remainingLevels-- > 0)
         {
-            string[] input = Console.ReadLine().Split(' ').ToArray();
+            string[] input = Console.ReadLine().Split();
 
             (int health, int enemies, int ammo, int originalIndex) levelData = (
                 int.Parse(input[0]),
