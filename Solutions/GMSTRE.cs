@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+
+// Solution to "GMSTRE - Game Store"  SPOJ.com classical problem
+// http://www.spoj.com/problems/GMSTRE/
 
 public static class GMSTRE
 {
-    // Solution to "GMSTRE - Game Store"  SPOJ.com classical problem 
-    // http://www.spoj.com/problems/GMSTRE/
-
     public static void Solve(List<(int health, int enemies, int ammo, int levelIndex)> levels)
     {
         int easiestLevel, hardestLevel;
