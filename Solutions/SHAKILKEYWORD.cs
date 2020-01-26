@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-
 // Solution to "SHAKILKEYWORD - Keyword Finder"  SPOJ.com classical problem 
 // http://www.spoj.com/problems/SHAKILKEYWORD/
 
