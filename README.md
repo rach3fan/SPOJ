@@ -14,7 +14,8 @@ Because of some isues with large I/O data on some SPOJ problems, consider using 
 |4|2020/01/08|34275|[Game Store](http://www.spoj.com/problems/GMSTRE/)|[GMSTRE.cs](https://github.com/rach3fan/SPOJ/blob/master/Solutions/GMSTRE.cs)|#greedy #ad-hoc-1 #adhoc|Classical|
 |5|2020/01/08|28179|[Appending String](http://www.spoj.com/problems/GOC11A/)|[GOC11A.cs](https://github.com/rach3fan/SPOJ/blob/master/Solutions/GOC11A.cs)|#goc-s01e01|Classical|
 |6|2020/01/09|26385|[Harish and his rooks puzzle](https://www.spoj.com/problems/HARISH_PUZZLE/)|[HARISH_PUZZLE.cs](https://github.com/rach3fan/SPOJ/blob/master/Solutions/HARISH_PUZZLE.cs)|#greedy|Classical|
-|7|2020/01/13|34923|[Hack the Password](https://www.spoj.com/problems/NABILHACKER/)|[NABILHACKER.cs](https://github.com/rach3fan/SPOJ/blob/master/Solutions/NABILHACKER.cs)|no tags|Classical|
+|7|2020/01/13|34923|[Hack the Password](http://www.spoj.com/problems/NABILHACKER/)|[NABILHACKER.cs](https://github.com/rach3fan/SPOJ/blob/master/Solutions/NABILHACKER.cs)|no tags|Classical|
+|8|2020/01/28|7210|[Draw Mountains](http://www.spoj.com/problems/DRAWM/)|[DRAWM.cs](https://github.com/rach3fan/SPOJ/blob/master/Solutions/DRAWM.cs)|no tags|Classical|
 
 My spoj.com account:<br />
 www.spoj.com/users/pt_2019/<br />
