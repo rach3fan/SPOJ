@@ -21,6 +21,7 @@ public static class DRAWM
             int heightDifference = skyline.heights[i + 1] - skyline.heights[i];
             char nextSymbol = heightDifference < 0 ? '\\' : heightDifference == 0 ? '_' : '/';
             int nextPosition;
+
             switch (nextSymbol)
             {
                 case '\\':
@@ -29,10 +30,6 @@ public static class DRAWM
                     break;
 
                 case '_':
-                    nextPosition = Symbol == '/' ? Position - 1 : Position;
-                    AddSymbol(mountain, nextPosition, nextSymbol, i);
-                    break;
-
                 case '/':
                     nextPosition = Symbol == '/' ? Position - 1 : Position;
                     AddSymbol(mountain, nextPosition, nextSymbol, i);
@@ -41,13 +38,14 @@ public static class DRAWM
         }
         Draw(mountain);
     }
+
     public static void AddSymbol(List<char>[] mountain, int nextPosition, char nextSymbol, int i)
     {
         if (mountain[nextPosition] == null)
         {
             mountain[nextPosition] = new List<char>();
         }
-
+        
         for (int j = mountain[nextPosition].Count; j < i; j++)
         {
             mountain[nextPosition].Add(' ');
@@ -74,6 +72,7 @@ public static class DRAWM
         Console.WriteLine("***");
     }
 }
+
 class Program
 {
     static void Main()
