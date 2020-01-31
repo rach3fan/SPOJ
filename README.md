@@ -16,6 +16,7 @@ Because of some isues with large I/O data on some SPOJ problems, consider using 
 |6|2020/01/09|26385|[Harish and his rooks puzzle](http://www.spoj.com/problems/HARISH_PUZZLE/)|[HARISH_PUZZLE.cs](http://github.com/rach3fan/SPOJ/blob/master/Solutions/HARISH_PUZZLE.cs)|#greedy|Classical|
 |7|2020/01/13|34923|[Hack the Password](http://www.spoj.com/problems/NABILHACKER/)|[NABILHACKER.cs](http://github.com/rach3fan/SPOJ/blob/master/Solutions/NABILHACKER.cs)|no tags|Classical|
 |8|2020/01/28|7210|[Draw Mountains](http://www.spoj.com/problems/DRAWM/)|[DRAWM.cs](http://github.com/rach3fan/SPOJ/blob/master/Solutions/DRAWM.cs)|no tags|Classical|
+|9|2020/01/31|34260|[Signpost reading](http://www.spoj.com/problems/SIGNPOST/)|[SIGNPOST.cs](http://github.com/rach3fan/SPOJ/blob/master/Solutions/SIGNPOST.cs)|no tags|Classical|
 
 My spoj.com account:<br />
 www.spoj.com/users/pt_2019/<br />
