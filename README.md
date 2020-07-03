@@ -22,4 +22,3 @@ Because of some isues with large I/O data on some SPOJ problems, consider using 
 
 My spoj.com account:<br />
 www.spoj.com/users/pt_2019/<br />
-www.spoj.com/WSEI/users/pt_2019/
